@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/padding_large"
+    android:paddingTop="@dimen/padding_medium"
+    android:paddingEnd="@dimen/padding_large"
+    android:paddingBottom="@dimen/padding_medium"
+    android:background="@color/off_white">
+
+    <TextView
+        android:id="@+id/success_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/profile_setup_success"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_h5"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tick_image"
+        android:layout_width="@dimen/icon_extra_large"
+        android:layout_height="@dimen/icon_extra_large"
+        android:layout_below="@+id/success_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:background="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/redirect_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tick_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:text="@string/redirect_to_homepage"
+        android:textSize="@dimen/text_h5"
+        android:textStyle="bold" />
+</RelativeLayout>

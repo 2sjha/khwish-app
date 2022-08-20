@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:background="@drawable/shape_event_goal_card_rectangle"
+    android:elevation="@dimen/elevation_large">
+
+    <ImageButton
+        android:id="@+id/edit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@drawable/ic_edit" />
+
+    <TextView
+        android:id="@+id/goal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@color/grey_dark"
+        android:textSize="@dimen/text_h3" />
+
+    <TextView
+        android:id="@+id/goal_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goal_name"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/grey_dark"
+        android:textSize="@dimen/text_h5" />
+
+    <TextView
+        android:id="@+id/goal_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goal_desc"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/sample_amount"
+        android:textSize="@dimen/text_h3"
+        android:textStyle="bold" />
+</RelativeLayout>

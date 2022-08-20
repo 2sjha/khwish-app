@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/withdrawal_amount_form_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/withdrawal_amount_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890."
+            android:drawableStart="@drawable/ic_money"
+            android:drawablePadding="@dimen/padding_extra_small"
+            android:drawableTint="@color/black_overlay"
+            android:hint="@string/prompt_withdrawal_amount"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/padding_extra_small"
+            android:selectAllOnFocus="true"
+            android:textSize="@dimen/text_h5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/transfer_method_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/withdrawal_amount_form_parent"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/shape_date_text_rectangle"
+        android:padding="@dimen/padding_extra_small" />
+
+    <ProgressBar
+        android:id="@+id/withdrawal_progressbar"
+        android:layout_width="@dimen/icon_large"
+        android:layout_height="@dimen/icon_large"
+        android:layout_below="@+id/transfer_method_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/withdraw_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/withdrawal_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/action_withdraw"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_h5"
+        android:visibility="visible" />
+</RelativeLayout>

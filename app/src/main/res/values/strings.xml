@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">Khwish</string>
+    <string name="facebook_app_id">501061990612267</string>
+    <string name="fb_login_protocol_scheme">fb501061990612267</string>
+
+    <!--    Login and Entry Page Strings-->
+    <string name="prompt_phone_number">Phone Number</string>
+    <string name="prompt_email">Email</string>
+    <string name="fb_login_failed">Fb login failed. Please retry logging in with different method.</string>
+    <string name="google_login_failed">Google login failed. Please retry logging in with different method.</string>
+    <string name="login_failed_invalid_creds">Login failed. Invalid Credentials.</string>
+    <string name="login_failed_too_many_requests">Login failed. Too many requests.</string>
+    <string name="made_with_love">Made with &#x2665; in INDIA</string>
+    <string name="please_wait">Loading. Please Wait.</string>
+    <string name="wait_verifying">Please Wait. Verifying your phone number.</string>
+    <string name="action_edit">Edit</string>
+    <string name="didnt_receive_otp">Didn\'t Receive OTP?</string>
+    <string name="action_resend">Resend</string>
+    <string name="action_enter_manually">Enter Manually</string>
+    <string name="india_country_code">+91</string>
+    <string name="invalid_phone_number">Invalid Phone Number</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="profile_setup_success">Your Profile is Successfully Setup.</string>
+    <string name="redirect_to_homepage">Redirecting to HomePage</string>
+    <string name="log_out">Log Out</string>
+    <string name="sign_in_mobile_number">Sign In with your mobile number</string>
+    <string name="sign_in_using">Sign In using</string>
+    <string name="facebook">Facebook</string>
+    <string name="action_receive_otp">Receive OTP</string>
+    <string name="google">Google</string>
+    <string name="user_notification_token_sent">User Notification Token Sent</string>
+
+    <!--    On-boarding Page Strings-->
+    <string name="prompt_full_name">Full Name</string>
+    <string name="tnc_agree">Click to Agree with</string>
+    <string name="tnc">Terms and Conditions</string>
+    <string name="action_next">NEXT</string>
+    <string name="ask_provide_upi">You can provide your UPI ID for Withdrawal</string>
+    <string name="ask_provide_bank_account">You can provide your Bank Account details for Withdrawal</string>
+    <string name="ask_upi_id">Enter UPI ID</string>
+    <string name="prompt_upi_id">UPI ID</string>
+    <string name="prompt_account_number">Account Number</string>
+    <string name="re_enter_account_number">Re-enter Account Number</string>
+    <string name="prompt_ifsc">IFSC Code</string>
+    <string name="prompt_account_holder_name">Account Holder\'s Name</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_skip_now">Skip Now</string>
+    <string name="ask_personal_details">Please Provide Personal Details</string>
+    <string name="ask_bank_details">Please Provide Bank Details which will be used during withdrawal</string>
+    <string name="cannot_be_empty">This field cannot be empty</string>
+    <string name="please_agree_tnc">Please Agree to our TnC</string>
+    <string name="please_check_account_number">Please Recheck Bank Account Number</string>
+    <string name="account_numbers_dont_match">Account Numbers don\'t match</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_upi_id">Invalid UPI</string>
+    <string name="invalid_ifsc">Invalid IFSC</string>
+    <string name="dob_not_set">Date of Birth not set</string>
+    <string name="prompt_dob">Date of Birth</string>
+    <string name="user_on_boarding">User On-Boarding</string>
+    <string name="action_submit">Submit</string>
+    <string name="or">OR</string>
+
+
+    <!--    Home Page Strings-->
+    <string name="sample_amount">\u20B9 ....</string>
+    <string name="event_date_not_set">Event Date not set</string>
+    <string name="action_add_event">Add Event</string>
+    <string name="action_modify_event">Modify Event</string>
+    <string name="open_events">Open Events</string>
+    <string name="closed_events">Closed Events</string>
+    <string name="total">Total: </string>
+    <string name="my_balance">My Balance</string>
+    <string name="action_invite">Invite</string>
+    <string name="goals">Goals</string>
+    <string name="prompt_withdrawal_amount">Withdrawal Amount</string>
+    <string name="action_withdraw">Withdraw</string>
+    <string name="no_events_yet">No Events Yet. Please add an Event to continue.</string>
+
+    <!--    Add Event and Add Goal Strings-->
+    <string name="prompt_event_name">Event Name</string>
+    <string name="prompt_event_desc">Event Description</string>
+    <string name="action_save_event">Save Event</string>
+    <string name="prompt_event_date">Event Date </string>
+    <string name="discard_event">Event will be discarded</string>
+    <string name="confirm_event">Event will be added</string>
+    <string name="confirm_modify_event">Event will be modified</string>
+    <string name="ask_add_goal">Do you want to add a Goal to this Event?</string>
+    <string name="prompt_goal_name">Goal Name</string>
+    <string name="prompt_goal_desc">Goal Description</string>
+    <string name="action_save_goal">Save Goal</string>
+    <string name="prompt_goal_amount">Goal Amount</string>
+    <string name="discard_goal">Goal will be discarded</string>
+    <string name="confirm_goal">Goal will be added</string>
+    <string name="confirm_modify_goal">Goal will be modified</string>
+    <string name="goal_will_be_modified_in">"This Goal will be Modified in "</string>
+    <string name="goal_will_be_added_to">"This Goal will be added to "</string>
+    <string name="no_goal_amount">Goal amount not set.</string>
+    <string name="inr">\u20B9 </string>
+
+    <!--    Event Details Page Strings-->
+    <string name="event_details">Event Details</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="log_out_xml_key">log_out_key</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_add_goal">Add Goal</string>
+    <string name="action_modify_goal">Modify Goal</string>
+    <string name="contributors">Contributors</string>
+    <string name="no_goals_yet">No Goals added.</string>
+    <string name="no_contributions_yet">No Contributions Yet.</string>
+
+    <!--    Profile Page Strings-->
+    <string name="profile">Profile</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="bank_information">Bank Information</string>
+    <string name="no_bank_info">We don\'t have your Bank Details yet. Please click edit icon to provide details.</string>
+    <string name="bank_information_not_present">Bank Information not present. Please provide bank details to withdraw.</string>
+    <string name="logout">Are you sure you want to Logout ?</string>
+    <string name="contact_us_at">Contact us at</string>
+    <string name="email_us_at">Email us at</string>
+    <string name="support_email">support@khwish.com</string>
+    <string name="support_phone_number">8826867684</string>
+
+    <!--    Wallet Page Strings-->
+    <string name="withdrawal_request_submitted">Your request has been successfully submitted.\n\nYour withdrawal will be processed in 3 working days.</string>
+    <string name="invalid_withdrawal_amount">Invalid Withdrawal Amount</string>
+    <string name="wallet">Wallet</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="wallet_activity">Wallet Activity</string>
+    <string name="no_wallet_activities">No Wallet Activities Yet.</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="please_select_transfer_method">Please Select Transfer Method</string>
+    <string name="withdrawals_delay">*All Withdrawals will be processed in 3 working days</string>
+
+    <!--    Common Error Strings-->
+    <string name="oops">Oops, Something went wrong.</string>
+    <string name="check_internet">Please check internet connection</string>
+
+    <!--    Common Strings-->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">RETRY</string>
+    <string name="yes">YES</string>
+    <string name="back">Back</string>
+
+    <string name="invite_message">Hi, Inviting you to my Community funding Event</string>
+    <string name="checkout_my_event">Please click on the link below to checkout my event.</string>
+    <string name="contributions_received_notification_channel">Contributions Received</string>
+
+    <string-array name="transfer_methods">
+        <item>Select Transfer Method</item>
+        <item>Bank Transfer</item>
+        <item>UPI Transfer</item>
+    </string-array>
+</resources>

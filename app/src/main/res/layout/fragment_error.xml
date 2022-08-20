@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white">
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/oops"
+        android:textSize="@dimen/text_h4"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/error_img"
+        android:layout_width="@dimen/icon_extra_extra_extra_large"
+        android:layout_height="@dimen/icon_extra_extra_extra_large"
+        android:layout_above="@+id/error_text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_error"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_large"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/back"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_h3"
+        android:textStyle="bold" />
+</RelativeLayout>

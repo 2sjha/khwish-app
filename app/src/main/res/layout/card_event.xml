@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:orientation="vertical"
+    card_view:cardElevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/event_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/main_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_home_card_event">
+
+            <RelativeLayout
+                android:id="@+id/event_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/shape_home_card_event_name_bg"
+                android:padding="@dimen/padding_extra_extra_small">
+
+                <TextView
+                    android:id="@+id/event_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_toStartOf="@+id/invite_layout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_h5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/event_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/event_name"
+                    android:layout_alignStart="@+id/event_name"
+                    android:layout_marginTop="@dimen/margin_extra_small"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_h8"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/invite_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:background="@drawable/shape_home_card_event_invite_bg"
+                    android:padding="@dimen/margin_extra_small">
+
+                    <TextView
+                        android:id="@+id/invite_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:text="@string/action_invite"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_h6"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/share_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_extra_small"
+                        android:layout_toEndOf="@+id/invite_text"
+                        android:background="@drawable/ic_share" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goal_count_collected_amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_details_layout"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/goal_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_h5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/collected_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:text="@string/sample_amount"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_h5"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/pull_down_chevron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goal_count"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_expand_more" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_card_layout">
+
+            <RelativeLayout
+                android:id="@+id/goals_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:background="@color/colorPrimaryDark">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/goals_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_extra_small"
+                    android:layout_marginBottom="@dimen/margin_extra_small" />
+
+                <RelativeLayout
+                    android:id="@+id/add_goal_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goals_recycler"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_extra_small"
+                    android:background="@drawable/shape_home_button_add_goal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/action_add_goal"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_h6"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

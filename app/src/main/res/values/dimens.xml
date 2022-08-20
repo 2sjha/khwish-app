@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_h1">40sp</dimen>
+    <dimen name="text_h2">32sp</dimen>
+    <dimen name="text_h3">24sp</dimen>
+    <dimen name="text_h4">20sp</dimen>
+    <dimen name="text_h5">16sp</dimen>
+    <dimen name="text_h6">14sp</dimen>
+    <dimen name="text_h7">12sp</dimen>
+    <dimen name="text_h8">10sp</dimen>
+
+    <dimen name="padding_extra_large">48dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+    <dimen name="padding_small">16dp</dimen>
+    <dimen name="padding_extra_small">8dp</dimen>
+    <dimen name="padding_extra_extra_small">4dp</dimen>
+
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+
+    <dimen name="margin_extra_extra_extra_large">84dp</dimen>
+    <dimen name="margin_extra_extra_large">64dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_extra_extra_small">2dp</dimen>
+
+    <dimen name="icon_extra_extra_extra_large">120dp</dimen>
+    <dimen name="icon_extra_extra_large">90dp</dimen>
+    <dimen name="icon_extra_large">60dp</dimen>
+    <dimen name="icon_large">45dp</dimen>
+    <dimen name="icon_medium">30dp</dimen>
+    <dimen name="icon_small">25dp</dimen>
+    <dimen name="icon_extra_small">20dp</dimen>
+
+    <dimen name="button_height_large">60dp</dimen>
+    <dimen name="button_width_small">120dp</dimen>
+    <dimen name="button_width_extra_small">30dp</dimen>
+
+    <dimen name="stroke_thin">4dp</dimen>
+    <dimen name="stroke_extra_thin">1dp</dimen>
+
+    <dimen name="text_country_code">60dp</dimen>
+
+    <dimen name="checkbox_medium">30dp</dimen>
+    <dimen name="checkbox_large">45dp</dimen>
+
+    <dimen name="card_medium_height">200dp</dimen>
+    <dimen name="card_buttons_height">30dp</dimen>
+
+    <dimen name="loading_progressbar_large_square">70dp</dimen>
+    <dimen name="loading_progressbar_medium_square">40dp</dimen>
+</resources>

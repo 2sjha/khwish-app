@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    android:paddingStart="@dimen/padding_large"
+    android:paddingTop="@dimen/padding_medium"
+    android:paddingEnd="@dimen/padding_large"
+    android:paddingBottom="@dimen/padding_medium">
+
+    <TextView
+        android:id="@+id/fetching_otp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wait_verifying"
+        android:textSize="@dimen/text_h6" />
+
+    <TextView
+        android:id="@+id/user_phone_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetching_otp_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:textSize="@dimen/text_h5"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edit_phone_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetching_otp_text"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_toEndOf="@+id/user_phone_number_text"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/action_edit"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_h5" />
+
+    <ProgressBar
+        android:id="@+id/otp_progress"
+        android:layout_width="@dimen/loading_progressbar_medium_square"
+        android:layout_height="@dimen/loading_progressbar_medium_square"
+        android:layout_below="@+id/user_phone_number_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="visible" />
+
+    <com.khwish.app.utils.OtpEditText
+        android:id="@+id/otp_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_progress"
+        android:layout_marginTop="@dimen/margin_large"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/text_h5" />
+
+    <TextView
+        android:id="@+id/didnt_receive_otp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp_form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/didnt_receive_otp"
+        android:textSize="@dimen/text_h5" />
+
+    <TextView
+        android:id="@+id/resend_otp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp_form"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_toEndOf="@+id/didnt_receive_otp_text"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/action_resend"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_h5" />
+
+    <Button
+        android:id="@+id/enter_manually_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/didnt_receive_otp_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        android:text="@string/action_enter_manually"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_h6" />
+</RelativeLayout>

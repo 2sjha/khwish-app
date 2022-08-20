@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="NoActionBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/sans_serif_text_view_style</item>
+        <item name="buttonStyle">@style/sans_serif_button_style</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textSize">@dimen/text_h5</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="goal_will_be">
+        <item name="android:textSize">@dimen/text_h5</item>
+    </style>
+
+    <style name="bold_event_name">
+        <item name="android:textSize">@dimen/text_h4</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="login_entry_loading" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="sans_serif_text_view_style" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="sans_serif_button_style" parent="android:Widget.Button">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="LoadingDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+</resources>

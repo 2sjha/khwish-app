@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="@dimen/padding_small"
+    tools:context=".activities.WalletActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/back_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/button_width_extra_small"
+                android:layout_height="@dimen/button_width_extra_small"
+                android:background="@drawable/ic_back"
+                android:backgroundTint="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/back_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@+id/back_button"
+                android:text="@string/wallet"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_h3"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/withdrawal_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back_button_layout"
+            android:layout_marginStart="@dimen/margin_extra_large"
+            android:layout_marginTop="@dimen/margin_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_large"
+            android:background="@drawable/shape_withdraw_card"
+            android:elevation="@dimen/elevation_medium"
+            android:padding="@dimen/padding_small">
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="@dimen/icon_small"
+                android:layout_height="@dimen/icon_small"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:layout_marginEnd="@dimen/margin_extra_small"
+                android:background="@drawable/ic_close"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wallet_balance_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/close_button"
+                android:layout_toStartOf="@id/withdraw_button"
+                android:text="@string/wallet_balance"
+                android:textSize="@dimen/text_h5" />
+
+            <TextView
+                android:id="@+id/wallet_balance_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_balance_text"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_toStartOf="@id/withdraw_button"
+                android:text="@string/sample_amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_h3" />
+
+            <Button
+                android:id="@+id/withdraw_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/close_button"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="false"
+                android:enabled="false"
+                android:text="@string/action_withdraw"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_h5"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/withdrawal_fragments_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_balance_value"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/withdrawals_delay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/withdrawal_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_extra_large"
+            android:text="@string/withdrawals_delay"
+            android:textSize="@dimen/text_h6"/>
+
+        <RelativeLayout
+            android:id="@+id/wallet_activity_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/withdrawals_delay_text">
+
+            <TextView
+                android:id="@+id/wallet_activity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_activity"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_h5"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/wallet_activity_divider"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_activity_text"
+                android:background="@drawable/shape_home_wallet_divider"
+                android:backgroundTint="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/wallet_activities_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wallet_activity_text_layout"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/loading_progress"
+                    android:layout_width="@dimen/loading_progressbar_medium_square"
+                    android:layout_height="@dimen/loading_progressbar_medium_square"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/error_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_extra_large"
+                    android:text="@string/oops"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_h4"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/wallet_activities_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

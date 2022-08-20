@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/back_button_layout"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/bank_details_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ask_bank_details"
+        android:textSize="@dimen/text_h4"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/provide_upi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/provide_upi_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/upi_chosen_radio_button"
+            android:text="@string/ask_provide_upi"
+            android:textSize="@dimen/text_h5" />
+
+        <RadioButton
+            android:id="@+id/upi_chosen_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:buttonTint="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upi_form_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingStart="@dimen/padding_extra_small"
+        android:paddingEnd="@dimen/padding_medium">
+
+        <ImageView
+            android:id="@+id/upi_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_upi" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/upi_vpa_form_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toEndOf="@id/upi_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/upi_vpa_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_upi_id"
+                android:inputType="text"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_h5" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/or"
+        android:textSize="@dimen/text_h4" />
+
+    <RelativeLayout
+        android:id="@+id/provide_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/provide_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/account_chosen_radio_button"
+            android:text="@string/ask_provide_bank_account"
+            android:textSize="@dimen/text_h5" />
+
+        <RadioButton
+            android:id="@+id/account_chosen_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:buttonTint="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_details_form_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium">
+
+        <ImageView
+            android:id="@+id/bank_icon"
+            android:layout_width="@dimen/icon_medium"
+            android:layout_height="@dimen/icon_medium"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_bank"
+            android:backgroundTint="@color/grey_dark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/account_number_form_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toEndOf="@id/bank_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/account_number_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="@string/prompt_account_number"
+                android:inputType="number"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_h5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reenter_account_number_form_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_number_form_parent"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_toEndOf="@id/bank_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reenter_account_number_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="@string/re_enter_account_number"
+                android:inputType="number"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_h5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ifsc_form_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reenter_account_number_form_parent"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_toEndOf="@id/bank_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ifsc_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_ifsc"
+                android:inputType="text"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_h5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/account_holder_name_form_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifsc_form_parent"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_toEndOf="@id/bank_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/account_holder_name_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_account_holder_name"
+                android:inputType="text"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_h5" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/skip_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/shape_home_button_add_event"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/action_skip_now"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_h6"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finish_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="@drawable/shape_home_button_add_event"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/finish_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/action_finish"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_h6"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
