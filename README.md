@@ -9,21 +9,24 @@ This is the users' frontend for Khwish platform which does following tasks:
 - Manage User Profile
 
 ### Login Activity
-[Login Screen](images/1.png)
+![Login Screen](images/1.png)
+<br><br>
 
 ### Home Activity
-[Home Screen](images/2.png)
-[Home Screen - Expanded](images/3.png)
+![Home Screen](images/2.png)
+![Home Screen - Expanded](images/3.png)
+<br><br>
 
 ### Event Activity
-[Add Event Screen](images/8.png)
-[Add Wish Screen](images/9.png)
-[Event Screen - Wishes](images/5.png)
-[Event Screen - Contributors](images/4.png)
+![Add Event Screen](images/8.png)
+![Add Wish Screen](images/9.png)
+![Event Screen - Wishes](images/5.png)
+![Event Screen - Contributors](images/4.png)
+<br><br>
 
 ### Wallet Activity
-[Wallet Screen - Activities](images/6.png)
-[Wallet Screen - Withdrawal](images/7.png)
+![Wallet Screen - Activities](images/6.png)
+![Wallet Screen - Withdrawal](images/7.png)
 
 Pls feel free to checkout any part of the codebase, let me know if you have any suggestions/improvements.
 
