@@ -3,7 +3,7 @@ This is an Android app written in Java.
 This is the users' frontend for the Khwish platform, which does the following tasks:
 - User login & signup via Google, Facebook, and Phone Number using Firebase integration
 - User onboarding, which includes capturing profile details and bank details for withdrawal in the future
-- Add/Edit/Close Events and similarly add/edit/close goals/wishes inside those events
+- Add/Edit/Close Events and do the same for goals/wishes inside those events
 - Monitor Events & wish's contributions
 - Monitor overall wallet balance and activities & submit a withdrawal request
 - Manage User Profile
