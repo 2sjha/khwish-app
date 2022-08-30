@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void verifyTokenFromServer(FirebaseUser user) {
-        //Make HTTPS call and verify user-token and of everything goes ok, goto next screen
+        //Make HTTPS call and verify user-token and if everything goes ok, goto next screen
         user.getIdToken(true).addOnCompleteListener(task -> {
             if (task.isSuccessful() && task.getResult() != null) {
                 String idToken = task.getResult().getToken();
