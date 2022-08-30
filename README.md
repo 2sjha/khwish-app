@@ -7,6 +7,9 @@ This is the users' frontend for Khwish platform which does following tasks:
 - Monitor Event & wish contributions
 - Monitor overall wallet activities & submit withdrawal request
 - Manage User Profile
+- Notifications on contribution
+- Firebase Integration for Analytics
+- API interaction using Retrofit2
 
 ### Login Activity
 ![Login Screen](images/1.png)
